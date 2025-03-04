@@ -1,0 +1,196 @@
+body {
+    background-image: url("images/uploads-1646310894d36c6004e5cb924ac955f9f4bfdbb2c8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0c1318;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step1, .step2 {
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
+    max-width: 600px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #3564bd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.step2 {
+    display: none;
+}
+
+.main-header {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    background-color: #3564bd;
+    box-shadow: 0 0 2px #3564bd;
+    font-weight: 700;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+
+.text-1 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.text-2 {
+    font-size: 12px;
+    color: rgb(224, 224, 224);
+}
+
+.input-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.input-username {
+    width: 95%;
+    padding: 10px 40px;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid #3564bd;
+    border-radius: 5px;
+    font-size: 25px;
+    outline: none;
+}
+
+.resourcePackage {
+    text-shadow: -1px 0 #3564bd, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.resource-cards {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.Resources-Card, .Resources-Card-Selected {
+    width: 160px;
+    height: 130px;
+    background-size: cover;
+    border-radius: 10px;
+    border: 2px solid #d4d4d4;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Resources-Card-Selected {
+    border-color: white;
+    background-color: #3564bd;
+    animation: pulse 0.1s linear forwards;
+}
+
+.Resources-Card:hover {
+    border-color: white;
+    background-color: #3564bd;
+    animation: pulse 0.1s linear forwards;
+}
+
+.diamond-icon {
+    width: 20px;
+    margin-top: 10px;
+}
+
+.price-icon {
+    width: 70px;
+}
+
+.price-strikethrough {
+    text-decoration: line-through;
+    color: #e0e0e0;
+}
+
+.bnt-Resources-generate {
+    width: 190px;
+    height: 50px;
+    background-color: #3564bd;
+    margin: 20px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: medium;
+    border-radius: 5px;
+    color: black;
+    box-shadow: rgba(44, 134, 187, 0.15) 0 -25px 18px -14px inset, rgba(44, 134, 187, 0.15) 0 1px 2px, rgba(44, 134, 187, 0.15) 0 2px 4px, rgba(44, 134, 187, 0.15) 0 4px 8px, rgba(44, 134, 187, 0.15) 0 8px 16px, rgba(44, 134, 187, 0.15) 0 16px 32px;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border: 0;
+}
+
+.bnt-Resources-generate:hover {
+    box-shadow: rgba(44, 134, 187, 0.15) 0 -25px 18px -14px inset, rgba(44, 134, 187, 0.15) 0 1px 2px, rgba(44, 134, 187, 0.15) 0 2px 4px, rgba(44, 134, 187, 0.15) 0 4px 8px, rgba(44, 134, 187, 0.15) 0 8px 16px, rgba(44, 134, 187, 0.15) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.text-gen, .text-gen1, .text-gen2, .text-gen3, .text-gen4, .text-gen5, .text-gen6 {
+    display: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.text-gen-status, .text-gen1-status, .text-gen2-status, .text-gen3-status, .text-gen4-status, .text-gen5-status, .text-gen6-status {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.text-gen-status, .text-gen5-status, .text-gen6-status {
+    background-color: red;
+}
+
+.text-gen1-status, .text-gen3-status {
+    background-color: #03dc8c;
+}
+
+.text-gen2-status, .text-gen4-status {
+    background-color: #d0ff84;
+}
+
+.loading-box {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgb(219,

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free Fire Diamonds Generator</title>
+    <meta name="description" content="Free Fire Diamonds Generator">
+    <meta property="og:title" content="Free Fire Diamonds Generator">
+    <meta property="og:description" content="Free Fire Diamonds Generator">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="300">
+</head>
+<body>
+    <header>
+        <center>
+            <img src="images/uploads-164320379330c7aa0b7dc87c15d66d997f6fe8e507.png" style="width:320px">
+        </center>
+    </header>
+    <main>
+        <section class="step1" id="step1">
+            <div class="main-header">Free Fire Diamonds Generator</div>
+            <div class="text-1">CLAIM YOUR DIAMONDS PACKAGE BY FILLING OUT THE FORM BELOW</div>
+            <div class="text-2">Generator Latest Update on: <span id="datetime"></span></div>
+            <div class="input-container">
+                <img src="images/uploads-1646133433bba5c79f294456b67bc73ffe7765728b.png" class="input-icon">
+                <input type="text" id="lname" placeholder="username/email" class="input-username">
+            </div>
+            <div class="text-2">Make sure that you enter the exact username/email that is in the game!</div>
+            <div class="resourcePackage">Choose your Diamonds Package</div>
+            <div class="resource-cards">
+                <div class="Resources-Card" id="Resources-Card1" onclick="SelectedCard(1)">
+                    <img src="images/getmedia-4d17c1dc-4eb3-47c4-bda0-eed4b1e8bbee.png" class="diamond-icon">
+                    <p class="noselect">2,000 Diamonds</p>
+                    <img src="images/uploads-16432037931ebe21c7ddd3d1eec6689a7e973e9e11.png" class="price-icon">
+                    <p class="noselect price-strikethrough">$ 19.99</p>
+                </div>
+                <div class="Resources-Card" id="Resources-Card2" onclick="SelectedCard(2)">
+                    <img src="images/getmedia-4d17c1dc-4eb3-47c4-bda0-eed4b1e8bbee.png" class="diamond-icon">
+                    <p class="noselect">5,000 Diamonds</p>
+                    <img src="images/uploads-16432037931ebe21c7ddd3d1eec6689a7e973e9e11.png" class="price-icon">
+                    <p class="noselect price-strikethrough">$ 49.99</p>
+                </div>
+                <div class="Resources-Card" id="Resources-Card3" onclick="SelectedCard(3)">
+                    <img src="images/getmedia-4d17c1dc-4eb3-47c4-bda0-eed4b1e8bbee.png" class="diamond-icon">
+                    <p class="noselect">9,999 Diamonds</p>
+                    <img src="images/uploads-16432037931ebe21c7ddd3d1eec6689a7e973e9e11.png" class="price-icon">
+                    <p class="noselect price-strikethrough">$ 99.99</p>
+                </div>
+            </div>
+            <button class="bnt-Resources-generate" onclick="generate()">GENERATE</button>
+        </section>
+        <section class="step2" id="step2">
+            <div class="main-header">Free Fire Diamonds Generator</div>
+            <div class="text-gen" id="text-gen"><div class="text-gen-status"></div>Failed to locate Free Fire Server for <span id="user-name"></span> (attempt 1)</div>
+            <div class="text-gen1" id="text-gen1"><div class="text-gen1-status"></div>Successfully located Free Fire Server for <span id="user-name1"></span> (attempt 2)</div>
+            <div class="text-gen2" id="text-gen2"><div class="text-gen2-status"></div>Sending Diamonds...</div>
+            <div class="text-gen3" id="text-gen3"><div class="text-gen-status"></div>Diamonds sent Successfully.</div>
+            <div class="text-gen6" id="text-gen6"><div class="text-gen6-status"></div></div>
+            <div class="text-gen4" id="text-gen4"><div class="text-gen-status"></div>Verification is required.</div>
+            <div class="text-gen5" id="text-gen5"><div class="text-gen5-status"></div>Please complete anti-bot verification. Your Diamonds will be added to <span id="user-name2"></span> automatically once you are verified.</div>
+            <div class="loading-box">
+                <div class="lds-dual-ring"></div>
+                <div class="text-gen-loading" id="text-gen-loading">Generator is running...</div>
+            </div>
+        </section>
+    </main>
+    <aside class="ads">
+        <div class="ad-popunder">
+            <script type='text/javascript' src='//pl26017865.effectiveratecpm.com/77/cc/1d/77cc1de62a17213a81a1b69b6722ab06.js'></script>
+        </div>
+        <div class="ad-banner-728">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '758329125e331b6f5047b674799af89d',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/758329125e331b6f5047b674799af89d/invoke.js"></script>
+        </div>
+        <div class="ad-banner-300">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '316ab771de6f24cadcec0b07f893c8fc',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/316ab771de6f24cadcec0b07f893c8fc/invoke.js"></script>
+        </div>
+        <div class="ad-native">
+            <script async="async" data-cfasync="false" src="//pl26018115.effectiveratecpm.com/0bd5a56a48920ea8ae218b1d35342a3c/invoke.js"></script>
+            <div id="container-0bd5a56a48920ea8ae218b1d35342a3c"></div>
+        </div>
+    </aside>
+    <script src="js/2.2.4-jquery.min.js"></script>
+    <script src="js/dh5eoo1lobszc.cloudfront.net-f8c7d3b.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
